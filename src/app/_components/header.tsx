@@ -37,18 +37,11 @@ const Header = () => {
   return (
     <header className="flex justify-between mt-8 mb-20 text-2xl font-bold leading-tight tracking-tight md:text-3xl md:tracking-tighter">
       <Link href="/">mtseo</Link>
-      <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-        <svg
-          width="24"
-          height="18"
-          viewBox="0 0 40 30"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect width="40" height="6" fill="#333" />
-          <rect y="12" width="40" height="6" fill="#333" />
-          <rect y="24" width="40" height="6" fill="#333" />
-        </svg>
+      <button
+        className="md:hidden rounded-md px-3 py-1 cursor-grab hover:bg-gray-100 transition-color duration-500"
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+      >
+        🍔
       </button>
       <nav className="hidden md:flex md:justify-start">
         {headerMenu.map((menu) => (
