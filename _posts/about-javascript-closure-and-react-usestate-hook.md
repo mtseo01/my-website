@@ -7,11 +7,11 @@ author:
   name: mtseo
 ---
 
-# JavaScript 클로저(Closure)와 ReactuseState Hook
+### 클로저(Closure)
 
 JavaScript에서 클로저(closure)는 함수와 그 함수가 선언될 때의 렉시컬 환경(Lexical Environment)과의 조합입니다. 이는 함수가 자신이 선언될 때의 **환경을 기억**하고, 그 환경 밖에서 호출될 때도 그 환경에 접근할 수 있는 특징을 의미합니다. 이러한 특징은 **상태 유지**, **데이터 은닉**, **함수 팩토리[^1]** 등 다양한 패턴을 구현하는 데 사용됩니다.
 
-### 클로저(Closure)
+---
 
 클로저 예제 코드입니다:
 
@@ -34,6 +34,8 @@ innerFunc(); // 12
 ```
 
 여기서 `outer` 함수는 `inner` 함수를 반환합니다. `inner` 함수는 `outer` 함수의 스코프에 있는 `y` 변수를 참조하고 있습니다. `outer` 함수를 호출하여 반환된 `inner` 함수를 `innerFunc`에 할당하고, 이 `innerFunc`를 호출할 때마다 `y`의 값이 증가하고 그 값이 출력됩니다. 이는 `inner` 함수가 `outer` 함수의 스코프에 있는 `y`를 **기억**하고 있기 때문인데, 이 현상을 클로저라고 합니다.
+
+---
 
 ### React useState Hook
 
@@ -83,7 +85,5 @@ console.log(getState()); // [{title: 'DUNE part1', year: '2022'}, {title: 'DUNE 
 `getState` 함수는 `state`의 현재 값을 반환하고, `setState` 함수는 `state`의 값을 변경합니다.
 
 실제 React `useState` Hook은 더 복잡하게 구현되어 있겠지만, 이 예제 코드를 통해 클로저의 기본 원리를 이해하는 데 도움이 될 것입니다.
-
-—
 
 [^1]: 함수 팩토리: 객체를 반환하는 함수
