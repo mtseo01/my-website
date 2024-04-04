@@ -82,7 +82,7 @@ export default function RootLayout({
         <div className="min-h-screen">{children}</div>
         <div id="_portal"></div>
         <GoogleAnalytics gaId="GTM-NJ8BQ9FM" />
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
