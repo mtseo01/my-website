@@ -35,10 +35,12 @@ const Header = () => {
   };
 
   return (
-    <header className="flex justify-between mt-8 mb-20 text-2xl font-bold leading-tight tracking-tight md:text-3xl md:tracking-tighter">
-      <Link href="/">mtseo</Link>
+    <header className="flex justify-between pt-6 pb-6 text-2xl font-bold leading-tight tracking-tight md:pb-10 lg:pb-16 md:text-3xl md:tracking-tighter">
+      <Link className="self-center" href="/">
+        mtseo
+      </Link>
       <button
-        className="md:hidden rounded-md px-3 py-1 cursor-grab hover:bg-gray-100 transition-color duration-500"
+        className="px-3 py-1 duration-500 rounded-md md:hidden cursor-grab hover:bg-gray-100 transition-color"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
         🍔
