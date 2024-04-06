@@ -27,6 +27,7 @@
     "remark-parse": "^11.0.0",
     "remark-rehype": "^11.1.0",
     "schema-dts": "^1.1.2",
+    "sharp": "^0.33.3",
     "unified": "^11.0.4"
   },
   "devDependencies": {
