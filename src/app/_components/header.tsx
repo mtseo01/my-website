@@ -40,7 +40,7 @@ const Header = () => {
         mtseo
       </Link>
       <button
-        className="px-3 py-1 duration-500 rounded-md md:hidden cursor-grab hover:bg-gray-100 transition-color"
+        className="px-3 py-1 duration-500 border rounded-md bg-gray-50 md:hidden cursor-grab hover:bg-gray-100"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
         🍔
