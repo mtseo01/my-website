@@ -1,1 +1,14 @@
-This is the repository for my personal website. The main page will feature a brief introduction about myself, along with sections for my Blog and Projects. It is currently a work in progress.🏃
+# mtseo.dev
+
+'성장과정이 담긴 나의 웹 공간’
+
+기술 블로그와 포트폴리오를 위한 개인 웹사이트입니다.
+
+```
+https://mtseo.dev
+```
+
+---
+
+
+웹사이트의 잘못된 내용은 Git Issue로 알려 주시면 정말 감사하겠습니다. 🙇‍♂️ 
