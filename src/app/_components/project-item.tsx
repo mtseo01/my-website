@@ -9,6 +9,7 @@ export type ProjectItemProps = {
   description: string;
   skills: string[];
   githubLink: string;
+  links?: { title: string; url: string }[];
 };
 
 export function ProjectItem({
@@ -17,6 +18,7 @@ export function ProjectItem({
   description,
   githubLink,
   skills,
+  links,
 }: ProjectItemProps) {
   return (
     <div className="flex flex-col-reverse w-full h-auto px-3 py-3 my-6 border rounded-md sm:flex-row">
@@ -58,10 +60,23 @@ export function ProjectItem({
           </div>
         </div>
         {/* skills */}
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap my-2">
           {skills.map((skill, i) => (
             <SkillItem key={i} skill={skill} />
           ))}
+        </div>
+        <div className="flex flex-col">
+          {links
+            ? links.map((link, i) => (
+                <Link
+                  key={`${link.title}-${i}`}
+                  className="text-blue-500 underline hover:text-blue-300"
+                  href={link.url}
+                >
+                  {link.title}
+                </Link>
+              ))
+            : null}
         </div>
       </div>
     </div>

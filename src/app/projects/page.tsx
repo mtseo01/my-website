@@ -33,6 +33,12 @@ const PROJECTS: ProjectItemProps[] = [
     skills: ['TypeScript', 'Next.js 14', 'React', 'TailwindCSS'],
     githubLink: 'https://github.com/mtseo01/my-website',
     projectImageUrl: MTSEO_DEV_IMAGE_URL,
+    links: [
+      {
+        title: '나의 웹사이트 개설기',
+        url: 'https://mtseo.dev/blog/launching-my-personal-website',
+      },
+    ],
   },
   {
     title: 'quick-quote',
