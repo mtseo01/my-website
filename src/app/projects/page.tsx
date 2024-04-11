@@ -24,6 +24,12 @@ const PROJECTS: ProjectItemProps[] = [
     skills: ['TypeScript', 'Next.js 13', 'React', 'TailwindCSS', 'SWR'],
     githubLink: 'https://github.com/Yong-Taek-United/daily-record-front',
     projectImageUrl: DAILY_IMAGE_URL,
+    links: [
+      {
+        title: '개발기 1편 - useForm Custom Hook',
+        url: 'https://mtseo.dev/blog/daily-record-useform-custom-hook',
+      },
+    ],
   },
   {
     title: 'mtseo.dev',
