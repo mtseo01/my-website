@@ -13,6 +13,7 @@ interface HeaderMenuType {
 
 const headerMenu: HeaderMenuType[] = [
   { path: '/blog', name: 'Blog' },
+  { path: '/notes', name: 'Notes' },
   { path: '/projects', name: 'Projects' },
 ];
 
