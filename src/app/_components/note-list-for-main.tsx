@@ -7,15 +7,16 @@ export default function NoteListForMain() {
   const topNotes = allNotes.slice(0, 5);
   return (
     <div className="w-full">
-      <div className="flex items-center justify-between py-2">
+      <Link
+        className="flex items-center justify-between py-2 group"
+        href={`/notes`}
+      >
         <strong className="sm:text-md md:text-lg">Notes</strong>
-        <Link
-          className="text-gray-400 transition-colors duration-300 hover:text-black sm:text-md md:text-lg"
-          href={`/notes`}
-        >
+        <p className="text-gray-400 transition-colors duration-300 group-hover:text-sky-600 sm:text-md md:text-lg">
           + more
-        </Link>
-      </div>
+        </p>
+      </Link>
+
       <div>
         {topNotes.map((note) => (
           <Link className="group" href={`/notes/${note.slug}`} key={note.slug}>

@@ -7,15 +7,15 @@ export default function PostListForMain() {
   const topPosts = allPosts.slice(0, 5);
   return (
     <div className="w-full">
-      <div className="flex items-center justify-between py-2">
+      <Link
+        className="flex items-center justify-between py-2 group"
+        href={`/blog`}
+      >
         <strong className="sm:text-md md:text-lg">Blog</strong>
-        <Link
-          className="text-gray-400 transition-colors duration-300 hover:text-black sm:text-md md:text-lg"
-          href={`/blog`}
-        >
+        <p className="text-gray-400 transition-colors duration-300 group-hover:text-sky-600 sm:text-md md:text-lg">
           + more
-        </Link>
-      </div>
+        </p>
+      </Link>
       <div>
         {topPosts.map((post) => (
           <Link className="group" href={`/blog/${post.slug}`} key={post.slug}>
