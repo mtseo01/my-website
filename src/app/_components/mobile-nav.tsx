@@ -34,13 +34,20 @@ const MobileNav = ({
       {headerMenu.map((menu) => {
         const isActive =
           pathname === menu.path || pathname.startsWith(`${menu.path}/`);
-        return (
+        return isActive ? (
+          <a
+            key={menu.path}
+            href={menu.path}
+            className="p-4 ml-0 font-normal text-gray-900 transition-colors duration-300 md:ml-4 first:ml-0 hover:text-gray-900"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            {menu.name}
+          </a>
+        ) : (
           <Link
             key={menu.path}
             href={menu.path}
-            className={`ml-0 md:ml-4 first:ml-0 ${
-              isActive ? 'text-gray-900' : 'text-gray-400'
-            } font-normal transition-colors duration-300 hover:text-gray-900 p-4`}
+            className="p-4 ml-0 font-normal text-gray-400 transition-colors duration-300 md:ml-4 first:ml-0 hover:text-gray-900"
             onClick={() => setIsMenuOpen(false)}
           >
             {menu.name}

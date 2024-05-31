@@ -23,12 +23,17 @@ const Header = () => {
 
   const NavLink = ({ path, name }: HeaderMenuType) => {
     const isActive = pathname === path || pathname.startsWith(`${path}/`);
-    return (
+    return isActive ? (
+      <a
+        href={path}
+        className="ml-4 font-normal text-gray-900 transition-colors duration-300 first:ml-0 hover:text-gray-900"
+      >
+        {name}
+      </a>
+    ) : (
       <Link
         href={path}
-        className={`ml-4 first:ml-0 ${
-          isActive ? 'text-gray-900' : 'text-gray-400'
-        } font-normal transition-colors duration-300 hover:text-gray-900`}
+        className="ml-4 font-normal text-gray-400 transition-colors duration-300 first:ml-0 hover:text-gray-900"
       >
         {name}
       </Link>
