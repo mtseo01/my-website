@@ -4,6 +4,7 @@ import { Metadata } from 'next';
 import { getAllNotes } from '@/lib/notes-api';
 import { NoteList } from '../_components/note-list';
 import TagList from '../_components/tag-list';
+import { Suspense } from 'react';
 
 export const metadata: Metadata = {
   title: 'Notes',
@@ -17,9 +18,19 @@ export default function NotesMain() {
     <main>
       <Container>
         <Header />
-        {allNotes.length > 0 && <TagList notes={allNotes} />}
+
+        {allNotes.length > 0 && (
+          <Suspense>
+            <TagList notes={allNotes} />
+          </Suspense>
+        )}
+
         <hr className="max-w-2xl mx-auto" />
-        {allNotes.length > 0 && <NoteList notes={allNotes} />}
+        {allNotes.length > 0 && (
+          <Suspense>
+            <NoteList notes={allNotes} />
+          </Suspense>
+        )}
       </Container>
     </main>
   );
