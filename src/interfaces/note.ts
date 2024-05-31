@@ -13,4 +13,5 @@ export type Note = {
   };
   content: string;
   preview?: boolean;
+  tags: string[];
 };
