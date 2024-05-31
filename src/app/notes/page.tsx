@@ -3,6 +3,7 @@ import Header from '../_components/header';
 import { Metadata } from 'next';
 import { getAllNotes } from '@/lib/notes-api';
 import { NoteList } from '../_components/note-list';
+import TagList from '../_components/tag-list';
 
 export const metadata: Metadata = {
   title: 'Notes',
@@ -16,6 +17,8 @@ export default function NotesMain() {
     <main>
       <Container>
         <Header />
+        {allNotes.length > 0 && <TagList notes={allNotes} />}
+        <hr className="max-w-2xl mx-auto" />
         {allNotes.length > 0 && <NoteList notes={allNotes} />}
       </Container>
     </main>
