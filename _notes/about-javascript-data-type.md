@@ -1,10 +1,10 @@
 ---
 title: 'JavaScript 원시형(Primitive) 타입과 참조형(Reference) 타입'
-excerpt: 'JavaScript의 데이터 타입의 유형과 특성에 대해 정리'
 description: 'JavaScript의 데이터 타입의 유형과 특성에 대해 정리'
 date: '2024-04-16'
 author:
   name: mtseo
+tags: ['JavaScript']
 ---
 
 JavaScript의 데이터 타입은 원시형(Primitive)과 참조형(Reference) 두 가지 유형으로 분류된다.

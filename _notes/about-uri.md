@@ -4,6 +4,7 @@ description: 'URI, URL, URN에 대해서'
 date: '2024-05-16'
 author:
   name: mtseo
+tags: ['HTTP', 'Network']
 ---
 
 ### URI(Uniform Resource **Identifier**)
