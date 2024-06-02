@@ -4,7 +4,7 @@ description: 'HTTP 캐시 제어 헤더와 캐시 무효화에 대해서 정리'
 date: '2024-05-28'
 author:
   name: mtseo
-tags: ['HTTP', 'network']
+tags: ['HTTP', 'Network']
 ---
 
 #### Cache-Control(캐시 제어)
