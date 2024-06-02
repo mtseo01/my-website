@@ -1,12 +1,12 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getAllPosts, getPostBySlug } from '../../../lib/api';
-import markdownToHtml from '../../../lib/markdownToHtml';
-import Container from '../../_components/container';
-import Header from '../../_components/header';
 import { PostBody } from '../../_components/post-body';
 import { PostHeader } from '../../_components/post-header';
 import { HOME_OG_IMAGE_URL } from '@/lib/constants';
+import markdownToHtml from '../../../lib/markdownToHtml';
+import Container from '../../_components/container';
+import Header from '../../_components/header';
 
 export default async function Post({ params }: Params) {
   const post = getPostBySlug(params.slug);
@@ -22,12 +22,7 @@ export default async function Post({ params }: Params) {
       <Container>
         <Header />
         <article className="mb-32">
-          <PostHeader
-            title={post.title}
-            coverImage={post.coverImage}
-            date={post.date}
-            author={post.author}
-          />
+          <PostHeader title={post.title} date={post.date} />
           <PostBody content={content} />
         </article>
       </Container>

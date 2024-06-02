@@ -1,12 +1,12 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import markdownToHtml from '../../../lib/markdownToHtml';
-import Container from '../../_components/container';
-import Header from '../../_components/header';
 import { PostBody } from '../../_components/post-body';
 import { PostHeader } from '../../_components/post-header';
 import { HOME_OG_IMAGE_URL } from '@/lib/constants';
 import { getAllNotes, getNoteBySlug } from '@/lib/notes-api';
+import markdownToHtml from '../../../lib/markdownToHtml';
+import Container from '../../_components/container';
+import Header from '../../_components/header';
 
 export default async function Note({ params }: Params) {
   const note = getNoteBySlug(params.slug);
@@ -22,12 +22,7 @@ export default async function Note({ params }: Params) {
       <Container>
         <Header />
         <article className="mb-32">
-          <PostHeader
-            title={note.title}
-            coverImage={note.coverImage}
-            date={note.date}
-            author={note.author}
-          />
+          <PostHeader title={note.title} date={note.date} tags={note.tags} />
           <PostBody content={content} />
         </article>
       </Container>
