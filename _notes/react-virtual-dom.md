@@ -1,10 +1,10 @@
 ---
 title: 'React 가상돔(Virtual DOM) 정리'
-excerpt: '가상 DOM의 개념부터 동작 원리를 정리하고 가상 DOM은 실제 DOM보다 빠른지에 대해 알아보았습니다.'
-description: 'React Virtual DOM에 대해 정리하였습니다.'
+description: 'React 가상 DOM에 대해 정리'
 date: '2024-03-20'
 author:
   name: mtseo
+tags: ['React']
 ---
 
 ![react](/assets/blog/images/react.png)
