@@ -26,6 +26,11 @@ const copiedUser = { ...user };
 console.log(user === copiedUser); // false
 
 console.log(user.detail === copiedUser.detail); // true
+
+copiedUser.detail.city = 'busan';
+
+console.log(user.detail.city); // busan
+console.log(copiedUser.detail.city); // busan
 ```
 
 #### 깊은 복사(Deep Copy)
@@ -45,6 +50,13 @@ const user = {
 const copiedUser = JSON.parse(JSON.stringify(user));
 
 console.log(user === copiedUser); // false
+
+console.log(user.detail === copiedUser.detail); // false
+
+copiedUser.detail.city = 'busan';
+
+console.log(user.detail.city); // seoul
+console.log(copiedUser.detail.city); // busan
 ```
 
 ---
