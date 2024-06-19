@@ -24,31 +24,21 @@ export default function SelfIntro() {
         </div>
         <div className="w-full">
           <strong className="mb-3 text-md sm:text-base lg:text-xl">
-            프론트엔드 개발자
+            Front-end Developer | Software Engineer
           </strong>
           <div className="my-2 sm:my-3 md:my-4">
-            <p className="text-md sm:text-lg md:text-xl">
-              제가 가진 기술과 전문성으로 많은 이들에게 좋은 영향을 주고
-              싶습니다.
+            <p className="text-sm sm:text-base">
+              Next.js와 React를 활용하여 다양한 애플리케이션을 개발하는 데에
+              자신 있습니다. 일을 즐기며 항상 최선을 다하는 성향으로, 기술
+              성장과 전문성 향상을 통해 지속적으로 발전하는 엔지니어가 되고자
+              합니다.
             </p>
-            <p className="text-md sm:text-lg md:text-xl">
-              그리고 이것들이 동기부여가 되어 계속 발전하는 개발자가 되겠습니다.
+            <p className="text-sm sm:text-base">
+              새로운 기술을 탐구하고 지식을 공유하는 것을 즐기며, 이를 통해 더
+              나은 개발 환경과 결과물을 창출하고자 노력 하고 있습니다.
             </p>
           </div>
           <div className="text-sm">
-            <div className="my-2 sm:my-3 md:my-4 sm:text-base">
-              <p>
-                브라우저 개발자 도구를 활용하여 문제를 해결하고 성능 최적화에
-                노력하고 있습니다. 더 나은 UI/UX을 위해 디자이너와 같이
-                고민하고, 비즈니스 로직에 대한 깊은 이해를 바탕으로 효율적인
-                애플리케이션 구현을 위해 백엔드 개발자와 의견을 조율하며 함께
-                소통합니다.
-              </p>
-              <p>
-                존중과 배려가 담긴 커뮤니케이션으로 동료들과 즐겁게 협업하며,
-                함께 성장하고 더 좋은 결과물을 만들기 위해 노력합니다.
-              </p>
-            </div>
             <div>
               <Link
                 href="https://github.com/mtseo01"
