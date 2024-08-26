@@ -5,6 +5,7 @@ description: 'mtseo.dev 개설기를 담았습니다.'
 date: '2024-03-04'
 author:
   name: mtseo
+tags: ['Review']
 ---
 
 ## 웹사이트를 개설한 계기

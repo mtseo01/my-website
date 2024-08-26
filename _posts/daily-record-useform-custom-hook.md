@@ -5,6 +5,7 @@ description: 'daily-record 개발기 1편 - useForm Custom hook'
 date: '2024-04-11'
 author:
   name: mtseo
+tags: ['React', 'Hooks', 'Review']
 ---
 
 ### 라이브러리 없이 form 관리를 하자

@@ -5,6 +5,7 @@ description: 'JavaScript 클로저에 대해 정리하였습니다.'
 date: '2024-03-27'
 author:
   name: mtseo
+tags: ['JavaScript', 'React']
 ---
 
 ### 클로저(Closure)
