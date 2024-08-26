@@ -1,12 +1,13 @@
 'use client';
 import { Note } from '@/interfaces/note';
+import { Post } from '@/interfaces/post';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 
-export default function TagList({ notes }: { notes: Note[] }) {
+export default function TagList({ items }: { items: Note[] | Post[] }) {
   const uniqueTags = useMemo(
-    () => Array.from(new Set(notes.flatMap((note) => note.tags))),
-    [notes]
+    () => Array.from(new Set(items.flatMap((note) => note.tags))),
+    [items]
   );
 
   const router = useRouter();
@@ -37,10 +38,10 @@ export default function TagList({ notes }: { notes: Note[] }) {
 
   return (
     <div className="flex flex-wrap max-w-2xl mx-auto my-6">
-      {uniqueTags.map((tag) => (
+      {uniqueTags.map((tag, i) => (
         <div
           onClick={() => handleClickedTag(tag)}
-          key={tag}
+          key={`${tag}_${i}`}
           className={`px-2 py-1 mb-2 mr-2 text-xs text-white transition-all duration-200 rounded-full shadow-md cursor-pointer sm:text-sm  sm:px-3 ${
             selectedTags.includes(tag)
               ? 'bg-sky-800'
