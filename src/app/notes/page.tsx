@@ -21,7 +21,7 @@ export default function NotesMain() {
 
         {allNotes.length > 0 && (
           <Suspense>
-            <TagList notes={allNotes} />
+            <TagList items={allNotes} />
           </Suspense>
         )}
 
